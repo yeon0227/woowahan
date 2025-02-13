@@ -1,0 +1,62 @@
+.blind {
+  position: absolute;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+}
+
+br.m {
+  display: none;
+}
+
+.group-title {
+  padding: 0 24px;
+  text-align: center;
+  word-break: keep-all;
+}
+.group-title .headline {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.group-title .subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  padding: 0 22px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.75;
+  vertical-align: top;
+  border-radius: 8px;
+  background-color: #f3f4f5;
+}
+
+/* 미디어쿼리 */
+@media (max-width:750px) {
+
+  br.m {
+    display: block;
+  }
+  br.pc {
+    display: none;
+  }
+
+  .group-title .headline {
+    font-size: 30px;
+    line-height: 1.4;
+  }
+  
+  }
